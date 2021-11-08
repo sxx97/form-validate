@@ -3,21 +3,22 @@
 * `initValidate`返回一个数组`[validateResult, errMsg]`
     * 第一个值对应验证结果，为`true`则说明验证不通过，存在需要更改的内容
     * 第二值是给出的错误提示，当第一个值为`true`后需要返回出来的错误
-* `initValidate`方法有两个参数： `initValidate(data, rules)`
-    * `data`是要验证的表单数据
-    * `rules`是规则
-        * `rules`的属性名对应`data`的属性名
-        * `rules`的键值对应详解
-      ```json
-        {
-            ruleName: 'chartRange',  // 规则名称
-            errMsg: '输入范围为4~8',  // 错误后的提示
-            params: {   // 规则方法会接受到的参数
-                min: 4,
-                max: 8
+    * `initValidate`方法有两个参数： `initValidate(data, rules)`
+        * `data`是要验证的表单数据
+        * `rules`是规则
+            * `rules`的属性名对应`data`的属性名
+            * `rules`的键值对应详解
+          ```js
+            {
+                ruleName: 'chartRange',  // 规则名称
+                errMsg: '输入范围为4~8',  // 错误后的提示
+                params: {   // 规则方法会接受到的参数
+                    min: 4,
+                    max: 8
+                }
             }
-        }
-```
+          ```
+* 示例       
 ```js
 import FormValidate from "only-validate";
 
@@ -61,8 +62,8 @@ if (res) {
  例子
   * `addRuleHandler`需在验证表单前增加
   * `removeRuleHandler`删除规则验证方法
-
-  ```js
+    
+```js
 import FormValidate from "only-validate";
 
 const v = new FormValidate();
