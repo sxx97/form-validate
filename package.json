@@ -1,6 +1,6 @@
 {
   "name": "only-validate",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "表单验证",
   "main": "dist/src/index.js",
   "scripts": {
