@@ -1,0 +1,21 @@
+{
+  "name": "form-validate",
+  "version": "1.0.0",
+  "description": "表单验证",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@types/jest": "^27.0.2",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1",
+    "ts-babel": "^6.1.7",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  }
+}
