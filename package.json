@@ -1,6 +1,6 @@
 {
   "name": "only-validate",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "表单验证",
   "main": "dist/src/index.js",
   "keywords":["form", "validate", "formValidate", "form-validate", "only-validate", "only", "表单", "验证表单", "表单"],
