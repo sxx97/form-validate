@@ -9,8 +9,8 @@ var FormValidate = /** @class */ (function () {
         for (var key in data) {
             if (rules.hasOwnProperty(key)) {
                 var ruleConfigs = rules[key];
-                for (var _i = 0, ruleConfigs_1 = ruleConfigs; _i < ruleConfigs_1.length; _i++) {
-                    var rule = ruleConfigs_1[_i];
+                for (var configKey in ruleConfigs) {
+                    var rule = ruleConfigs[configKey];
                     if (this.handlerNames.includes(rule.ruleName)) {
                         if (this[rule.ruleName](data[key], rule.params)) {
                             errMsgArr.push(rule.errMsg);

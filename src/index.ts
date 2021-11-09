@@ -25,7 +25,8 @@ class FormValidate implements IValidate {
         for(let key in data) {
             if (rules.hasOwnProperty(key)) {
                 const ruleConfigs = rules[key];
-                for(let rule of ruleConfigs) {
+                for(let configKey in ruleConfigs) {
+                    let rule = ruleConfigs[configKey];
                     if (this.handlerNames.includes(rule.ruleName)) {
                         if(this[rule.ruleName](data[key], rule.params)) {
                            errMsgArr.push(rule.errMsg);
